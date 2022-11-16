@@ -14,6 +14,8 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
+ const myheading = document.querySelector ("h1");
+ myheading.textContent = "hello world";
 const runTimer = () => {
   if (timer >= 0){
     timer = timer - 1;
@@ -78,8 +80,6 @@ const runTimer = () => {
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
 const runPomodoro = () => {
-const myheading = document.querySelector ("h1");
-myheading.textContent = "hello world";
   setInterval(() => {
     updateHtml();
     runTimer();

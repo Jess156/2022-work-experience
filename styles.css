@@ -37,7 +37,7 @@ body {
   background-color: black;
 }
 
-.navigation li {
+.navigation li a{
   float: left;
 }
 

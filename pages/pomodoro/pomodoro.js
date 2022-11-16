@@ -17,14 +17,14 @@ let timer = durationOfWork;
 
 const runTimer = () => {
   if (timer >= 0) {
-    return timer = timer - 1;
+    timer = timer - 1;
   } 
-  if (timer < 0, isBreakTime === true) {
-    return isBreakTime = false;
-     timer = durationOfWork;
+  if (timer < 0, isBreakTime == true) {
+    isBreakTime = false;
+    timer = durationOfWork;
   } 
-  if (timer < 0, isBreakTime === false) {
-    return isBreakTime = true;
+  if (timer < 0, isBreakTime == false) {
+    isBreakTime = true;
      timer = durationOfBreak;
   }
   //If the timer is greater or equal to 0
@@ -39,7 +39,7 @@ const runTimer = () => {
   // and set the timer to durationOfBreak
   //
   }
-
+  
 /*
  * This function updates the HTML to display the timer
  * and displays either "Work time!" or "Break time!"
@@ -50,13 +50,13 @@ const runTimer = () => {
  */
   updateHtml = () => {
     second.display = timer
-  if (isBreakTime === true) { 
+  if (isBreakTime == true) { 
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
   } 
-  if (isBreakTime === false) {
+  if (isBreakTime == false) {
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");

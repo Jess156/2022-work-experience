@@ -19,14 +19,17 @@ const runTimer = () => {
   if (timer >= 0) {
     timer = timer - 1;
   } 
-  if (timer < 0, isBreakTime == true) {
-    isBreakTime = false;
+  if (timer < 0 && isBreakTime == true) {
+    isBreakTime = false; 
     timer = durationOfWork;
   } 
-  if (timer < 0, isBreakTime == false) {
+  if (timer < 0 && isBreakTime == false) {
     isBreakTime = true;
     timer = durationOfBreak;
   }
+
+  console.log("runTimer:", {timer, isBreakTime});
+
   //If the timer is greater or equal to 0
   // then set the timer to 1 second less
   //
@@ -49,19 +52,23 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
   updateHtml = () => {
-    second.display = timer
+    const second = document.getElementById("second");
+    second.innerText = timer;
+
   if (isBreakTime == true) { 
     var element = document.getElementById("work-time");
     element.classList.add("hidden");
-    var element = document.getElementId("break-time");
+    var element = document.getElementById("break-time");
     element.classList.remove("hidden");
   } 
   if (isBreakTime == false) {
-    var element = document.getElementId("break-time");
+    var element = document.getElementById("break-time");
     element.classList.add("hidden");
-    var element = document.getElementId("work-time");
+    var element = document.getElementById("work-time");
     element.classList.remove("hidden")
   }
+
+  console.log("updateHtml:", {innerText: second.innerText});
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime
   // Add the ".hidden" CSS class to the "#work-time" element

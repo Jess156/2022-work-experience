@@ -72,11 +72,12 @@ const runTimer = () => {
  * This function runs the Pomodoro timer and flips the sign to show
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
-const runPomodoro = () => 5;{
-  setInterval(() => 3);{
-    updateHtml(); 
-    runTimer(); 
-  } 1000;
+const runPomodoro = () => {
+  setInterval(() => {
+    updateHtml();
+    runTimer();
+  }, 1000);
 };
 
-runPomodoro();}
+runPomodoro();
+}

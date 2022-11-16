@@ -16,6 +16,7 @@
 }
 
 .work-time {
+  background-color: antiquewhite;
   /* 
    * Add some background color and any other decorative means
    * to make it visually different from break-time
@@ -23,6 +24,7 @@
 }
 
 .break-time {
+  background-color: cadetblue;
   /* 
    * Add some background color and any other decorative means
    * to make it visually different from work-time

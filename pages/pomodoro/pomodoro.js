@@ -47,14 +47,14 @@ const runTimer = () => {
  */
   updateHtml = () => {
   if (isBreakTime = true){
-    let; var element = document.getElementById("work-time");
+    var element = document.getElementById("work-time");
     element.classList.add(".hidden");
-    let; var element = doument.getElementId("break-time");
+    var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
   } if (isBreakTime = false){
-    let; var element = document.getElementId("break-time");
+    var element = document.getElementId("break-time");
     element.classList.add(".hidden");
-    let; var element = document.getElementId("work-time");
+    var element = document.getElementId("work-time");
     element.classList.remove(".hidden")
   }
   // Show the value of the timer in the "#second" HTML element

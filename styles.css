@@ -29,7 +29,7 @@ body {
 }
 
 .navigation ul {
-  background: red;
+  background: #004225;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -43,7 +43,7 @@ body {
 
 .navigation li a:hover {
   /* Change the link color to #111 (black) on hover */
-  background-color: #222;
+  background-color: #004225;
 }
 
 .navigation li.active {

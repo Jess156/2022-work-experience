@@ -9,7 +9,7 @@
 html,
 body {
   /* Reset the browser's default styles */
-  margin: 10px;
+  margin: 0;
   padding: 0;
 }
 

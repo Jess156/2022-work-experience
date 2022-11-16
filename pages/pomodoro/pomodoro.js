@@ -25,7 +25,7 @@ const runTimer = () => {
   } 
   if (timer < 0, isBreakTime == false) {
     isBreakTime = true;
-     timer = durationOfBreak;
+    timer = durationOfBreak;
   }
   //If the timer is greater or equal to 0
   // then set the timer to 1 second less
@@ -52,15 +52,15 @@ const runTimer = () => {
     second.display = timer
   if (isBreakTime == true) { 
     var element = document.getElementById("work-time");
-    element.classList.add(".hidden");
+    element.classList.add(hidden);
     var element = doument.getElementId("break-time");
-    element.classList.remove(".hidden");
+    element.classList.remove(hidden);
   } 
   if (isBreakTime == false) {
     var element = document.getElementId("break-time");
-    element.classList.add(".hidden");
+    element.classList.add(hidden);
     var element = document.getElementId("work-time");
-    element.classList.remove(".hidden")
+    element.classList.remove(hidden)
   }
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime

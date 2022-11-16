@@ -78,11 +78,15 @@ const runTimer = () => {
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
 const runPomodoro = () => {
+const myheading = document.querySelector ("h1");
+myheading.textContent = "hello world";
   setInterval(() => {
     updateHtml();
     runTimer();
   }, 1000);
 };
+
+
 
 runPomodoro();
 }

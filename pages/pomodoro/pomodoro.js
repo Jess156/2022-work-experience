@@ -51,15 +51,15 @@ const runTimer = () => {
   updateHtml = () => {
     second.display = timer
   if (isBreakTime == true) { 
-    var element = pomodoro.html.getElementById("work-time");
+    var element = document.getElementById("work-time");
     element.classList.add("hidden");
-    var element = pomodoro.html.getElementId("break-time");
+    var element = document.getElementId("break-time");
     element.classList.remove("hidden");
   } 
   if (isBreakTime == false) {
-    var element = pomodoro.html.getElementId("break-time");
+    var element = document.getElementId("break-time");
     element.classList.add("hidden");
-    var element = pomodoro.html.getElementId("work-time");
+    var element = document.getElementId("work-time");
     element.classList.remove("hidden")
   }
   // Show the value of the timer in the "#second" HTML element

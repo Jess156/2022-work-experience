@@ -44,7 +44,7 @@ body {
 .navigation li a:hover {
   /* Change the link color to #111 (black) on hover */
   background-color: darkseagreen;
-  text-decoration-color: black;
+  text-decoration: black;
 }
 
 .navigation li.active {

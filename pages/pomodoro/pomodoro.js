@@ -90,6 +90,7 @@ const runTimer = () => {
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
 const runPomodoro = () => {
+  runTimer()
   setInterval(() => {
     updateHtml();
     runTimer();

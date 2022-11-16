@@ -15,6 +15,14 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_assignment.asp
  */
 const runTimer = () => {
+  if (timer >= 0){
+    timer = durationOfWork - 1;
+  } else if (timer <= 0, isBreakTime = true){
+    isBreakTime = false;
+    timer = durationOfWork;
+  } else(timer <= 0, isBreakTime = false);{
+    isBreakTime = false;
+    timer = durationOfBreak;
   // If the timer is greater or equal to 0
   // then set the timer to 1 second less
   //
@@ -26,7 +34,7 @@ const runTimer = () => {
   // then setIsBreakTime to true
   // and set the timer to durationOfBreak
   //
-};
+  }
 
 /*
  * This function updates the HTML to display the timer
@@ -37,6 +45,18 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
 const updateHtml = () => {
+  alert(second)
+  if (isBreakTime = true){
+    var element = document.getElementById("work-time");
+    element.classList.add(".hidden");
+    var element = doument.getElementId("break-time");
+    element.classList.remove(".hidden");
+  } else if (isBreakTime = false){
+    var element = document.getElementId("break-time");
+    element.classList.add(".hidden");
+    var element = document.getElementId("work-time");
+    element.classList.remove(".hidden")
+  }
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime
   // Add the ".hidden" CSS class to the "#work-time" element
@@ -59,4 +79,4 @@ const runPomodoro = () => {
   }, 1000);
 };
 
-runPomodoro();
+runPomodoro();}

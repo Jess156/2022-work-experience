@@ -48,12 +48,13 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
   updateHtml = () => {
-  if (isBreakTime = true){
+  if (isBreakTime === true){
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
-  } if (isBreakTime = false){
+  } 
+  if (isBreakTime === false){
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");

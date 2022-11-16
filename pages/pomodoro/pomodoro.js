@@ -14,7 +14,7 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
-const runTimer = () => {
+const runTimer = () => 5;{
   if (timer >= 0){
     timer = durationOfWork - 1;
   } else if (timer <= 0, isBreakTime = true){
@@ -45,7 +45,17 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_add_class.asp
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
-const updateHtml = () => "Work time!"{
+  updateHtml = () => "Work time!";{
+  if (isBreakTime = true){
+    var element = document.getElementById("work-time");
+    element.classList.add(".hidden");
+    var element = doument.getElementId("break-time");
+    element.classList.remove(".hidden");
+  } else if (isBreakTime = false){
+    var element = document.getElementId("break-time");
+    element.classList.add(".hidden");
+    var element = document.getElementId("work-time");
+    element.classList.remove(".hidden")
   }
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime
@@ -62,7 +72,7 @@ const updateHtml = () => "Work time!"{
  * This function runs the Pomodoro timer and flips the sign to show
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
-const runPomodoro = () => "Break Time!"{
+const runPomodoro = () => "Break Time!";{
   setInterval(() => {
     updateHtml(); 
     runTimer(); 

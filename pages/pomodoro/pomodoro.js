@@ -53,7 +53,7 @@ const runTimer = () => {
   if (isBreakTime == true) { 
     var element = pomodoro.html.getElementById("work-time");
     element.classList.add("hidden");
-    var element = pomodoro.httml.getElementId("break-time");
+    var element = pomodoro.html.getElementId("break-time");
     element.classList.remove("hidden");
   } 
   if (isBreakTime == false) {

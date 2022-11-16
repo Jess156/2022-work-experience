@@ -16,11 +16,11 @@ let timer = durationOfWork;
  */
 
 const runTimer = () => {
-  if (timer >= 0) {
-    timer = timer - 1;
+  //if (timer >= 0) {
+  //  timer = timer - 1;
   const myheading = document.querySelector ("h1");
   myheading.textContent = "in timer";
-  } 
+  //} 
   //if (timer < 0, isBreakTime === true) {
   //  isBreakTime = false;
   //  timer = durationOfWork;

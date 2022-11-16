@@ -17,10 +17,10 @@ let timer = durationOfWork;
 const runTimer = () => "Break Time!";{
   if (timer >= 0){
     timer = durationOfWork - 1;
-  } if (timer <= 0, isBreakTime = true){
+  } if (timer < 0, isBreakTime = true){
     isBreakTime = false;
     timer = durationOfWork;
-  } if (timer <= 0, isBreakTime = false);{
+  } if (timer < 0, isBreakTime = false);{
     isBreakTime = false;
     timer = durationOfBreak;
   

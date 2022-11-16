@@ -17,6 +17,8 @@ let timer = durationOfWork;
  const myheading = document.querySelector ("h1");
  myheading.textContent = "hello world";
 
+ const myheading = document.querySelector ("p");
+ myheading.textContent = "in timer";
 const runTimer = () => {
   if (timer >= 0){
     timer = timer - 1;

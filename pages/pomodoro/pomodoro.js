@@ -17,15 +17,15 @@ let timer = durationOfWork;
 
 const runTimer = () => {
   if (timer >= 0) {
-    timer = timer - 1;
+    return timer = timer - 1;
   } 
   if (timer < 0, isBreakTime === true) {
-    isBreakTime = false;
-    timer = durationOfWork;
+    return isBreakTime = false;
+     timer = durationOfWork;
   } 
   if (timer < 0, isBreakTime === false) {
-    isBreakTime = true;
-    timer = durationOfBreak;
+    return isBreakTime = true;
+     timer = durationOfBreak;
   }
   //If the timer is greater or equal to 0
   // then set the timer to 1 second less

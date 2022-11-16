@@ -74,8 +74,8 @@ const updateHtml = () => {
  */
 const runPomodoro = () => {
   setInterval(() => {
-    updateHtml(); 3
-    runTimer(); 5
+    updateHtml(); 
+    runTimer(); 
   }, 1000);
 };
 

@@ -15,18 +15,17 @@
   padding: 20px;
   border: 1px solid #333;
   color: white;
-  align-items: center;
 }
 
 .display-panel {
   width: 150px;
   padding: 5px;
   background: darkseagreen;
-  align-items: center;
 }
 
 .display {
   width: 20px;
+  align-items: center;
 }
 
 .divider {

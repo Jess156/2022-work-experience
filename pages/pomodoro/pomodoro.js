@@ -14,25 +14,21 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
- const myheading = document.querySelector ("h1");
- myheading.textContent = "hello world";
 
- const myheading = document.querySelector ("p");
- myheading.textContent = "in timer";
 const runTimer = () => {
-  if (timer >= 0){
+  if (timer >= 0) {
     timer = timer - 1;
-  const myheading = document.querySelector ("h2");
+  const myheading = document.querySelector ("h1");
   myheading.textContent = "in timer";
   } 
-  if (timer < 0, isBreakTime === true){
+  if (timer < 0, isBreakTime === true) {
     isBreakTime = false;
     timer = durationOfWork;
   } 
-  if (timer < 0, isBreakTime === false);{
+  if (timer < 0, isBreakTime === false) {
     isBreakTime = true;
     timer = durationOfBreak;
-  
+  }
   // If the timer is greater or equal to 0
   // then set the timer to 1 second less
   //
@@ -60,7 +56,7 @@ const runTimer = () => {
 
     second.display = timer
 
-  if (isBreakTime === true){
+  if (isBreakTime === true) { 
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
@@ -69,7 +65,7 @@ const runTimer = () => {
     const myheading = document.querySelector ("h1");
     myheading.textContent = "hello";
   } 
-  if (isBreakTime === false){
+  if (isBreakTime === false) {
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");

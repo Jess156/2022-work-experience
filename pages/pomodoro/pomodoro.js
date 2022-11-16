@@ -14,13 +14,13 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
-const runTimer = () => {
+const runTimer = () => "Break Time!";{
   if (timer >= 0){
     timer = durationOfWork - 1;
-  } else if (timer <= 0, isBreakTime = true){
+  } if (timer <= 0, isBreakTime = true){
     isBreakTime = false;
     timer = durationOfWork;
-  } else if (timer <= 0, isBreakTime = false);{
+  } if (timer <= 0, isBreakTime = false);{
     isBreakTime = false;
     timer = durationOfBreak;
   
@@ -51,7 +51,7 @@ const runTimer = () => {
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
-  } else if (isBreakTime = false){
+  } if (isBreakTime = false){
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");
@@ -72,11 +72,12 @@ const runTimer = () => {
  * This function runs the Pomodoro timer and flips the sign to show
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
-const runPomodoro = () => "Break Time!";{
-  setInterval(() => {
+const runPomodoro = () => 5;{
+  setInterval(() => 3);{
     updateHtml(); 
     runTimer(); 
-  }, 1000);
+  } 1000;
 };
 
 runPomodoro();}
+

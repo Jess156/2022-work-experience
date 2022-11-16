@@ -12,11 +12,11 @@
   width: 100%;
   height: 100%;
   border: 1px solid black;
-  color: black;
+  color: white;
 }
 
 .work-time {
-  background-color: #6e46ae;
+  background-color: darkseagreen;
   /* 
    * Add some background color and any other decorative means
    * to make it visually different from break-time

@@ -16,20 +16,18 @@ let timer = durationOfWork;
  */
 
 const runTimer = () => {
-  //if (timer >= 0) {
-  //  timer = timer - 1;
-  const myheading = document.querySelector ("h1");
-  myheading.textContent = "in timer";
-  //} 
-  //if (timer < 0, isBreakTime === true) {
-  //  isBreakTime = false;
-  //  timer = durationOfWork;
-  //} 
-  //if (timer < 0, isBreakTime === false) {
-  //  isBreakTime = true;
-  //  timer = durationOfBreak;
-  //}
-  // If the timer is greater or equal to 0
+  if (timer >= 0) {
+    timer = timer - 1;
+  } 
+  if (timer < 0, isBreakTime === true) {
+    isBreakTime = false;
+    timer = durationOfWork;
+  } 
+  if (timer < 0, isBreakTime === false) {
+    isBreakTime = true;
+    timer = durationOfBreak;
+  }
+  //If the timer is greater or equal to 0
   // then set the timer to 1 second less
   //
   // If the timer is less than 0 and isBreakTime true
@@ -51,28 +49,18 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
   updateHtml = () => {
-    const myheading = document.querySelector ("h1");
-    myheading.textContent = "hi";
-
     second.display = timer
-
   if (isBreakTime === true) { 
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
-
-    const myheading = document.querySelector ("h1");
-    myheading.textContent = "hello";
   } 
   if (isBreakTime === false) {
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");
     element.classList.remove(".hidden")
-
-    const myheading = document.querySelector ("h1");
-    myheading.textContent = "world";
   }
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime
@@ -90,7 +78,6 @@ const runTimer = () => {
  * "Work time!" or "Break time!" depending on how many seconds have passed.
  */
 const runPomodoro = () => {
-  runTimer()
   setInterval(() => {
     updateHtml();
     runTimer();
@@ -100,4 +87,3 @@ const runPomodoro = () => {
 
 
 runPomodoro();
-}

@@ -14,7 +14,7 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
-const runTimer = () => 5;{
+const runTimer = () => {
   if (timer >= 0){
     timer = durationOfWork - 1;
   } else if (timer <= 0, isBreakTime = true){

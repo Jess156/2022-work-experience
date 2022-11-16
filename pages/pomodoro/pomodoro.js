@@ -19,6 +19,8 @@ let timer = durationOfWork;
 const runTimer = () => {
   if (timer >= 0){
     timer = timer - 1;
+  const myheading = document.querySelector ("h1");
+  myheading.textContent = "in timer";
   } 
   if (timer < 0, isBreakTime === true){
     isBreakTime = false;
@@ -50,6 +52,9 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
   updateHtml = () => {
+    const myheading = document.querySelector ("h1");
+    myheading.textContent = "hi";
+
     second.display = timer
 
   if (isBreakTime === true){
@@ -57,7 +62,7 @@ const runTimer = () => {
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
-    
+
     const myheading = document.querySelector ("h1");
     myheading.textContent = "hello";
   } 

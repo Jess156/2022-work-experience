@@ -48,13 +48,7 @@ const runTimer = () => {
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
   updateHtml = () => {
-    id="clock"; class {"clock"
-    }
-    class { "display-panel"
-    }
-      id="second"; class {"display"; 3
-    }
-
+    second.display = 3
   if (isBreakTime === true){
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");

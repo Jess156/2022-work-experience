@@ -14,7 +14,7 @@ let timer = durationOfWork;
  * - https://www.w3schools.com/js/js_arithmetic.asp
  * - https://www.w3schools.com/js/js_assignment.asp
  */
-const runTimer = () => "Break Time!";{
+const runTimer = () => {
   if (timer >= 0){
     timer = durationOfWork - 1;
   } if (timer < 0, isBreakTime = true){
@@ -45,7 +45,7 @@ const runTimer = () => "Break Time!";{
  * - https://www.w3schools.com/howto/howto_js_add_class.asp
  * - https://www.w3schools.com/howto/howto_js_remove_class.asp
  */
-  updateHtml = () => "Work time!";{
+  updateHtml = () => {
   if (isBreakTime = true){
     var element = document.getElementById("work-time");
     element.classList.add(".hidden");
@@ -80,4 +80,3 @@ const runPomodoro = () => 5;{
 };
 
 runPomodoro();}
-

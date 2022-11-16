@@ -57,12 +57,18 @@ const runTimer = () => {
     element.classList.add(".hidden");
     var element = doument.getElementId("break-time");
     element.classList.remove(".hidden");
+    
+    const myheading = document.querySelector ("h1");
+    myheading.textContent = "hello";
   } 
   if (isBreakTime === false){
     var element = document.getElementId("break-time");
     element.classList.add(".hidden");
     var element = document.getElementId("work-time");
     element.classList.remove(".hidden")
+
+    const myheading = document.querySelector ("h1");
+    myheading.textContent = "world";
   }
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime

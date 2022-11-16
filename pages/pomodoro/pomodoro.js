@@ -20,7 +20,7 @@ const runTimer = () => {
   } else if (timer <= 0, isBreakTime = true){
     isBreakTime = false;
     timer = durationOfWork;
-  } else(timer <= 0, isBreakTime = false);{
+  } else if (timer <= 0, isBreakTime = false);{
     isBreakTime = false;
     timer = durationOfBreak;
   // If the timer is greater or equal to 0

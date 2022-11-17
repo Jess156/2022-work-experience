@@ -28,7 +28,6 @@ const runTimer = () => {
     timer = durationOfBreak;
   }
 
-  console.log("runTimer:", {timer, isBreakTime});
 
   //If the timer is greater or equal to 0
   // then set the timer to 1 second less
@@ -68,7 +67,6 @@ const runTimer = () => {
     element.classList.remove("hidden")
   }
 
-  console.log("updateHtml:", {innerText: second.innerText});
   // Show the value of the timer in the "#second" HTML element
   // If currently isBreakTime
   // Add the ".hidden" CSS class to the "#work-time" element

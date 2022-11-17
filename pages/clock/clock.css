@@ -12,19 +12,21 @@
 .clock {
   /* Shrink this element so it only just fits its contents and no bigger or smaller */
   width: fit-content;
-  padding: 20px;
-  border: 1px solid #333;
+  padding: 10px;
+  border: 2px solid black;
   color: white;
+  align-items: center;
 }
 
 .display-panel {
-  width: 150px;
-  padding: 5px;
-  background: darkseagreen;
+  width: 400px;
+  padding: 10px;
+  background-color: #A9A9A9;
+  align-items: center;
 }
 
 .display {
-  width: 20px;
+  width: 35px;
   align-items: center;
 }
 

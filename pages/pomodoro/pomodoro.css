@@ -1,7 +1,8 @@
 .break-time-container {
-  width: 200px;
+  width: 443px;
   height: 50px;
   margin-top: 10px;
+  align-items: center;
 }
 
 .work-time,
@@ -17,6 +18,8 @@
 
 .work-time {
   background-color: darkseagreen;
+  align-items: center;
+  border: 2px darkseagreen
   /* 
    * Add some background color and any other decorative means
    * to make it visually different from break-time
@@ -24,7 +27,9 @@
 }
 
 .break-time {
-  background-color: darkseagreen;
+  background-color: seagreen;
+  align-items: center;
+  border: 2px seagreen;
   /* 
    * Add some background color and any other decorative means
    * to make it visually different from work-time

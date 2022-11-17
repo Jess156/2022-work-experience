@@ -13,7 +13,7 @@
   /* Shrink this element so it only just fits its contents and no bigger or smaller */
   width: fit-content;
   padding: 10px;
-  border: 2px solid black;
+  border: 2px solid #004225;
   color: white;
   align-items: center;
 }

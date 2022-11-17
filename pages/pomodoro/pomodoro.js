@@ -1,6 +1,6 @@
 // For testing purposes, the duration is set to only a few seconds
-const durationOfWork = 20;
-const durationOfBreak = 5;
+const durationOfWork = 1500;
+const durationOfBreak = 300;
 
 // Set the initial values for these variables. These will be checked and updated by your code.
 let isBreakTime = false;
